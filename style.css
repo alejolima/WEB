@@ -1,0 +1,550 @@
+﻿:root
+{
+    --red:#ff2e63;
+    --black: #252a34;
+    --blue: #08d9d6;    
+    --white: #eaeaea;
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    background: #fff;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+/*go-top*/
+.go-top{  
+   position:fixed;
+   bottom: 100px;
+   right: -100%;
+   width: 50px;
+   height: 50px;
+   border:2px solid red;
+   background:white; 
+   z-index: 9999;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor:pointer;
+   transition: 400ms;
+
+}
+.go-top:hover{
+    border:2px solid white;
+    background: red;
+}
+.go-top:hover span{
+    color:white;
+}
+.go-top span{
+   font-size: 40px;
+   color:black;
+}
+/*menu de navegacion*/
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.menu .logo-box{
+    margin-left: 20px;
+}
+.menu .logo-box h1 a{
+    text-decoration: none;
+    font-size:  35px;
+    font-weight: 400;
+    color: #000000;
+}
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container .list {
+        display: flex;
+    }
+.menu .list-container .list li {
+        list-style: none;
+    }
+.menu .list-container .list li a{
+        text-decoration: none;
+        margin: 0px 10px;
+        padding: 8px;
+        color: #000000;
+        border-radius: 24px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+.menu .list-container .list li a.activo{
+    background: #ff0000;
+    color:#fff;
+}
+.menu .list-container .list li a:hover {
+        background: #ff0000;
+        color: #fff;
+    }
+.btn_menu > .fa-bars {
+        display: none;
+    }
+/*menu de navegacion*/
+
+
+/*IMG header*/
+.img-header {
+    position: relative;
+    width: 100%; 
+    height: 100vh;
+    background: url("C:/Users/Equipo/Desktop/PROYECTO MARKET/img/header.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.img-header .welcome{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.img-header .welcome h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 200;
+}
+.img-header .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+.img-header .welcome p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+.img-header .welcome > button {
+        width: 170px;
+        height: 40px;
+        background: rgba(173, 49, 49, 0.82);
+        border-radius: 24px;
+        border: none;
+        outline: none;
+        font-size: 22px;
+        color: #fff;
+        text-align: center;
+        margin-top: 20px;   
+        cursor: pointer;
+        transition: 0.5s;
+    }
+.img-header .welcome > button:hover{
+        background: #113497
+
+}
+/*IMG header*/
+/*acerca de nosotros*/
+.acerca_de{
+        width: 100%;
+        margin-top: 120px;
+}
+.acerca_de .info-container{
+        width: 80%;
+        margin:80px auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+}
+.acerca_de .info-container h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.acerca_de .info-container p{
+    text-align: center;
+    font-size: 17px;
+    color: #000000;
+    line-height: 35px;
+    margin: 10px 0px;
+}
+.acerca_de .info-container .about-gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.acerca_de .info-container .about-gallery img{
+    width: calc(33.33% - 10px);
+    height: 300px;
+    object-fit: cover;
+    margin: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.acerca_de .info-container .about-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.acerca_de .info-container .about-more button {
+     width: 120px;
+     height: 40px;
+        background: rgba(173, 49, 49, 0.82);
+        border-radius: 24px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .acerca_de .info-container .about-more button:hover {
+        background: #113497;
+    }
+
+    /*ACERCA DE NOSOTROS*/
+
+    /*NUESTROS PROYECTOS*/
+
+.our_projects {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("C:/Users/Equipo/Desktop/PROYECTO MARKET/img/per5.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.our_projects .deg-background {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.8);
+} 
+.our_projects .ejeZprojects{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.our_projects .container_projects{
+    width:100%;
+    margin:auto;
+    padding-top:100px;
+}
+.our_projects .container_projects .projects_title {
+        border:2px solid white;
+        padding:10px;
+        text-align:center;
+        width:50%;
+        margin:auto;
+
+ }
+ .our_projects .container_projects .projects_title h2 {
+        font-size:40px;
+        color:white;
+        font-weight: normal;
+ }
+ .our_projects .container_projects .projects_title hr {
+       background:white;
+       width:50%;
+       margin:10px auto;
+ }
+ .our_projects .container_projects .projects_image{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        margin-top:80px;
+        padding-bottom:100px;
+    }
+ .our_projects .container_projects .projects_image img{
+        width: calc(30% - 10px);
+        margin:10px;
+        object-fit:cover;
+        border-radius:10px;
+        cursor:pointer;    
+    }
+/*NUESTROS PROYECTOS*/
+
+/*TESTIMONIOS*/
+.testimonio{
+    width:100%;
+    margin-top:120px;
+}
+.testimonio .testimonio_title{
+    width:50%;
+    margin:auto;
+    text-align:center;
+}
+.testimonio .testimonio_title h2{
+    font-size:50px;
+    color: black;
+    font-weight:normal;
+    margin-bottom:10px;
+}
+.testimonio .testimonio_title hr{
+    width:60%;
+    margin:auto;
+    height:2px;
+    background:black;
+    border:none;
+}
+.testimonio .box-testimonio{
+    width:90%;
+    margin:80px auto;
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+.testimonio .box-testimonio .card-testimonio{
+    width:45%;
+    margin:20px;
+}
+.testimonio .box-testimonio .card-testimonio .card_img{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.testimonio .box-testimonio .card-testimonio .card_img img{
+       width:150px;
+       height:150px;
+       border-radius:50%;
+       object-fit:cover;
+       cursor:pointer;
+    }
+ .testimonio .box-testimonio .card-testimonio .testimonio-text {
+        width:100%;
+        border:2px solid red;
+        margin-top:30px;
+        padding:20px;
+        border-radius:20px;
+        cursor:pointer;
+        transition:200ms;
+    }
+ .testimonio .box-testimonio .card-testimonio .testimonio-text h4 {
+        color: red;
+        font-weight: normal;
+        font-size: 27px;
+        text-align: center;
+        margin-bottom: 10px;
+        transition: 200ms;
+    }
+ .testimonio .box-testimonio .card-testimonio .testimonio-text p {
+        font-size: 15px;
+        color: black;
+        text-align: center;
+        line-height: 20px;
+        transition: 200ms;
+    }
+ .testimonio .box-testimonio .card-testimonio .testimonio-text:hover {
+     border:2px solid blue;
+ }
+ .testimonio .box-testimonio .card-testimonio .testimonio-text:hover h4 {
+        color: blue;
+    }
+
+/*footer*/
+.footer{
+    position:relative;
+    width:100%;
+    height:100%;
+    background: url("C:/Users/Equipo/Desktop/PROYECTO MARKET/img/pie.png");
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
+}
+.footer .deg-footer{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+.footer .ejeZfooter{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.footer .footer_content{
+    width:90%;
+    padding-top:100px;
+    margin:auto;
+
+}
+.footer .footer_content .footer_tittle{
+    width:50%;
+    height:60px;
+    background:white;
+    margin:auto;
+    border:1px solid red;
+    border-radius:24px;
+    padding:15px;
+}
+.footer .footer_content .footer_tittle h2{
+    text-align:center;
+    color:black;
+    font-size:25px;
+    font-weight:normal;
+    margin-bottom:10px;
+}
+.footer .footer_content .footer_tittle hr {
+    width:80%;
+    margin:auto;
+}   
+.footer .footer_content .formulario-content{
+    width:60%;
+    background:white;
+    border-radius:24px;
+    border: 2px solid red;
+    margin:30px auto;/*aqui se arregla lo de abajo*/
+    padding:30px;
+   margin-bottom:40px;
+}
+.footer .footer_content .formulario-content #formulario{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+.footer .footer_content .formulario-content #formulario label{
+    text-align:center;
+    color:black;
+    font-size:15px;
+    margin: 10px 0px 10px 0px;
+}
+.footer .footer_content .formulario-content #formulario input { 
+    width:90%;
+    height:40px;
+    margin:auto;
+    border:2px solid red;
+    border-radius:24px;
+    outline:none;
+    text-align:center;
+    font-size:17px;
+    color:black;
+ }
+ .footer .footer_content .formulario-content #formulario textarea {
+        width: 90%;
+        height:200px;
+        margin: auto;
+        border:2px solid red;
+        border-radius:24px;
+        outline:none;
+        font-size:15px;
+        color:black;
+        padding:20px;
+  }
+ .footer .footer_content .formulario-content #formulario .send {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 15px 0px;
+  }
+.footer .footer_content .formulario-content #formulario .send button{
+        width: 100px;
+        height:25px;
+        background:red;
+        border-radius:24px;
+        border:none;
+        outline:none;
+        font-size:15px;
+        color:white;
+        text-align:center;
+        margin-top: 20px;
+        cursor:pointer;
+        transition:0.5s;
+ }
+.footer .footer_content .formulario-content #formulario .send button:hover {
+       background:blue;
+ }
+.footer .footer_content .formulario-content #formulario .mensaje_form {
+        text-align:center;
+ }
+.footer .footer_content .footer-text{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.footer .footer_content .footer-text p{
+    color:white;
+    font-size: 20px;
+}
+/**Media query o responsive**/
+@media only screen and (max-width: 900px){
+    .btn_menu > .fa-bars{
+        display: block;
+        position:absolute;
+        top:20px;
+        right:30px;
+        font-size: 30px;
+        cursor:pointer;
+    }
+    .btn_menu > .fa-bars:hover{
+        color:red;
+    }
+     .btn_menu > .fa-times:hover{
+        color:red;
+    }
+    .menu .list-container{
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: white;
+    }
+    .menu .list-container .list{
+        width:100%;
+        height:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        border-top:5px solid red;         
+    }
+    .menu .list-container .list li{
+        width:90%;
+        margin:10px 0px;
+        border-bottom:1px solid red;
+        text-align:center;
+    }
+    .menu .list-container .list li a {
+           font-size:20px;
+    }
+    .menu .list-container .list li a.activo{
+        background:none;
+        color:red;
+    }
+    .menu .list-container .list li a:hover {
+            background: none;
+            color: red;
+    }
+
+}
