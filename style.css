@@ -45,6 +45,24 @@ body {
    font-size: 40px;
    color:black;
 }
+/**skew**/
+.skew_abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+.skew_arriba{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 10vh 100vw 0 0;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    z-index: 10;
+}
 /*menu de navegacion*/
 #header{
     position: relative;
